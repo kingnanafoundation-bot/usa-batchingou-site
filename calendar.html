@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Calendar — USA Batchingou Community</title>
+<meta name="description" content="The shared community calendar of the USA Batchingou Community — assemblies, chapter meetups, and cultural events.">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="nav-wrap">
+    <a href="index.html" class="brand">
+      <span class="mark"><svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20 2 L36 20 L20 38 L4 20 Z" stroke="#8A2E1F" stroke-width="2"/><path d="M20 10 L28 20 L20 30 L12 20 Z" fill="#B9902E"/></svg></span>
+      <span>USA Batchingou<small>Community · Kwatchou Diaspora</small></span>
+    </a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="culture.html">Culture</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="calendar.html" class="active">Calendar</a></li>
+        <li><a href="chapters.html">Chapters</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="membership.html" class="nav-cta">Join / Subscribe</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<div class="page-banner">
+  <div class="container">
+    <div class="breadcrumb"><a href="index.html">Home</a> / Calendar</div>
+    <span class="eyebrow">Community calendar</span>
+    <h1>Everything, on one calendar</h1>
+    <p class="lede">Sample events are shown below to demonstrate the layout. Connect this calendar to Google Calendar or your event system to keep it live.</p>
+  </div>
+</div>
+
+<section>
+  <div class="container">
+    <div class="cal-head">
+      <div class="cal-nav">
+        <button id="calPrev" aria-label="Previous month">‹</button>
+        <button id="calNext" aria-label="Next month">›</button>
+      </div>
+      <div class="month-label" id="calMonthLabel"></div>
+      <a href="events.html" class="btn btn-ghost">List view</a>
+    </div>
+    <div class="cal-grid" id="calGrid"></div>
+
+    <div class="notice" style="margin-top:1.6rem;">
+      This is a static demo calendar with sample events. To make it live for your association, sync it with a shared Google Calendar or your event management tool.
+    </div>
+  </div>
+</section>
+
+<section class="section-alt">
+  <div class="container">
+    <div class="section-head center">
+      <span class="eyebrow">Recurring</span>
+      <h2>The rhythm of the year</h2>
+    </div>
+    <div class="grid grid-4">
+      <div class="card center"><h3 style="font-size:1rem;">Monthly</h3><p class="small">State coordinators call</p></div>
+      <div class="card center"><h3 style="font-size:1rem;">Quarterly</h3><p class="small">Chapter town halls</p></div>
+      <div class="card center"><h3 style="font-size:1rem;">Every August</h3><p class="small">Annual General Assembly</p></div>
+      <div class="card center"><h3 style="font-size:1rem;">Every September</h3><p class="small">Cultural Night</p></div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer" id="site-footer-slot"></footer>
+<script src="script.js"></script>
+<script src="footer.js"></script>
+</body>
+</html>
